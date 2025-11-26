@@ -1,0 +1,120 @@
+/*
+Full Name: Vin Sanjaykumar Patel
+File: mystyle.css
+GUI Assignment: HW4 Part 1 - jQuery Validation Plugin
+Email: vin_patel@student.uml.edu
+Date: Nov 24, 2025
+Copyright (c) 2025 by Vin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Description: In Part 1 of CSS file, I styled the webpage with jQuery 
+validation error messages.
+
+Citation:
+1) https://www.w3schools.com/js/default.asp
+2) https://jqueryvalidation.org/
+*/
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: sandybrown;
+    text-align: left;
+    padding: 20px;
+}
+
+h2 {
+    color: #0a2854;
+}
+
+form {
+    background-color: #fefefee0;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px black;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label, input {
+    display: block;
+    margin: 8px 0;
+}
+
+input {
+    padding: 6px;
+    width: 200px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #0a2854;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* jQuery Validation error styling */
+label.error {
+    color: red;
+    background: #f6bfc6;
+    border: 1px solid #f6bfc6;
+    padding: 6px;
+    border-radius: 6px;
+    margin-top: 5px;
+    display: block;
+    font-size: 14px;
+    width: 200px;
+}
+
+input.error {
+    border: 2px solid red;
+}
+
+.table-container {
+    max-height: 60vh;
+    overflow: auto;
+    margin: 20px auto;
+    width: fit-content;
+    border: 1px solid #ccccccac;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px lightgrey;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 100%;
+}
+
+th {
+    background-color: #0a2854;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+td:first-child, th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #0a2854;
+    color: white;
+    z-index: 1;
+}
+
+th, td {
+    border: 1px solid #ccccccac;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background-color: white;
+}
+
+tr:nth-child(odd) td {
+    background-color: white;
+}

@@ -1,0 +1,49 @@
+<!--
+Full Name: Vin Sanjaykumar Patel
+File: index.html
+GUI Assignment: HW4 Part 1 - jQuery Validation Plugin
+Email: vin_patel@student.uml.edu
+Date: Nov 24, 2025
+Copyright (c) 2025 by Vin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Description: In Part 1 of HTML file it makes the webpage using jQuery Validation plugin
+for input validation before generating multiplication table.
+
+Citation:
+1) https://www.w3schools.com/js/default.asp
+2) https://jqueryvalidation.org/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Multiplication Table - Part 1</title>
+        <link rel="stylesheet" href="css/mystyle.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    </head>
+
+    <body>
+        <h2>Please enter the table ranges</h2>
+
+        <form id="table_form">
+            <label>Minimum Column Value 
+                <input type="number" id="minColumn" name="minColumn" value="4">
+            </label>
+            <label>Maximum Column Value 
+                <input type="number" id="maxColumn" name="maxColumn" value="7">
+            </label>
+            <label>Minimum Row Value 
+                <input type="number" id="minRow" name="minRow" value="2">
+            </label>
+            <label>Maximum Row Value 
+                <input type="number" id="maxRow" name="maxRow" value="12">
+            </label>
+            <button type="submit" id="generateButton">Generate Table</button>
+        </form>
+
+        <div class="table-container" id="tableplace"></div>
+        <script src="js/mytable.js"></script>
+    </body>
+</html>
